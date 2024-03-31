@@ -1,0 +1,174 @@
+// Scss Document
+
+@mixin btn-primary
+{
+    padding: 10px 20px;
+    background-color: $color-primary;
+    color: $color-white;
+	border: none;
+
+}
+@mixin btn-primary-hover
+{
+    background-color: $color-dark;
+}
+
+@mixin btn-icon
+{
+    padding: 0;
+    background-color: $color-black-2;
+    color: $color-white;
+	border: none;
+	font-size: 13px;
+	i{padding: 8px;}
+}
+@mixin btn-icon-hover
+{
+    background-color: $color-primary;
+}
+@mixin footer-title
+{
+	color: $color-light;
+	font-size: 16px;
+	font-family: $font-SemiBold;
+}
+@mixin footer-title-hover
+{
+	color: $color-primary;
+	transition: all 0.5s linear;
+}
+@mixin list-filter
+{
+	padding: 5px 10px;
+	color: $color-black-2;
+	font-size: 16px;
+	font-family: $font-regular;
+	width: 303px;
+}
+@mixin list-filter-hover
+{
+	color: $color-light;
+	background-color: $color-blue;
+}
+@mixin tags-product
+{
+	padding: 4px 8px;
+    color: $color-gray-2;
+	background-color: $color-white;
+	border: 0.5px $color-gray solid;
+}
+@mixin tags-product-hover
+{
+    color: $color-primary;
+	border: 0.5px $color-primary solid;
+}
+@mixin underline
+{
+	color: $color-primary;
+	font-size: 16px;
+	font-family: $font-SemiBold;
+	border: none;
+	border-bottom: 1px $color-primary solid;
+	padding-bottom: 2px;
+	text-decoration: none;
+	background: none;
+	outline: none;
+	
+}
+@mixin underline-hover
+{
+	color: $color-black-2;
+	font-family: $font-SemiBold;
+	border-bottom: 1px $color-black-2 solid;
+}
+@mixin title-dark
+{
+	color: $color-dark;
+	
+}
+@mixin title-gray
+{
+	color: $color-gray;
+	
+}
+@mixin title-gray-2
+{
+	color: $color-gray-2;
+	
+}
+
+@mixin title-primary-hover
+{
+	color: $color-primary;
+	
+}
+@mixin date
+{
+	color: $color-primary;
+	font-size: 16px;
+	font-family: $font-regular
+}
+@mixin date-hover
+{
+	color: $color-gray;
+}
+@mixin icon-top
+{
+	color: $color-white;
+	font-size: 14.4px;
+	display: block;
+	line-height: 40px;
+	width: 30px;
+	padding: 0;
+}
+@mixin footer-icon
+{
+	padding: 10px;
+	background-color: $color-light;
+	color: $color-primary;
+	border-radius: 18px;
+	font-size: 16px;
+	transition: all 0.5s linear;
+}
+@mixin footer-icon-hover
+{
+	background-color: $color-primary;
+	color: $color-light;
+}
+@mixin respond($breakpoint)
+{
+	@if $breakpoint==xl
+	{
+		@media (min-width:1200px)
+		{
+			@content;
+		}
+	}
+	@if $breakpoint==lg
+	{
+		@media (max-width:1199px)
+		{
+			@content;
+		}
+	}
+	@if $breakpoint==md
+	{
+		@media (max-width:991px)
+		{
+			@content;
+		}
+	}
+	@if $breakpoint==sm
+	{
+		@media (max-width:767px)
+		{
+			@content;
+		}
+	}@if $breakpoint==xs
+	{
+		@media (max-width:575px)
+		{
+			@content;
+		}
+	}
+}

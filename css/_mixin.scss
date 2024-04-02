@@ -1,0 +1,74 @@
+$hologram-color-1: #EA6269; 
+$hologram-color-2: #C72ADA; 
+$hologram-color-3: #007DF7;
+$hologram-color-4: #4858CE; 
+$hologram-color-5: #B53895; 
+$hologram-color-6: #F14D4A; 
+$hologram-color-7: #F6BF4F; 
+$color-dark: #555555;
+$color-light: #FAFAFA;
+$color-gray-2: #838383;
+$color-primary: #dc3545;
+
+
+@mixin hologram-gradient-mess {
+  background: linear-gradient(to left bottom, $hologram-color-1, $hologram-color-2, $hologram-color-3);
+  
+}
+@keyframes hologram-animation-mess {
+	0% {
+		background-position: 0% 0%;
+	  }
+	  100% {
+		background-position: 0% 100%;
+	  }
+  }
+@mixin hologram-gradient-ig {
+  background: linear-gradient(to left bottom, $hologram-color-4, $hologram-color-5, $hologram-color-6, $hologram-color-7);
+  
+}
+@keyframes hologram-animation-ig {
+	0% {
+		background-position: 0% 0%;
+	  }
+	  100% {
+		background-position: 0% 100%;
+	  }
+}
+@mixin respond($breakpoint)
+{
+	@if $breakpoint==xl
+	{
+		@media (min-width:1200px)
+		{
+			@content;
+		}
+	}
+	@if $breakpoint==lg
+	{
+		@media (max-width:1199px)
+		{
+			@content;
+		}
+	}
+	@if $breakpoint==md
+	{
+		@media (max-width:991px)
+		{
+			@content;
+		}
+	}
+	@if $breakpoint==sm
+	{
+		@media (max-width:767px)
+		{
+			@content;
+		}
+	}@if $breakpoint==xs
+	{
+		@media (max-width:575px)
+		{
+			@content;
+		}
+	}
+}

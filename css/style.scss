@@ -28,6 +28,7 @@ body,button,input
 a {
     text-decoration: none;
   }
+p{line-height: 1.8;}
 ul li {
   list-style: none;
 }
@@ -312,9 +313,35 @@ ul li {
 
 #Education {
     margin-top: 100px;
-    .chungnhan{
-        width: 50%;
+    color: $color-dark;
+
+    h3{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 32px;
+        font-family: BeVietnamPro-sb;
     }
+    h6 {
+        font-family: BeVietnamPro-sb;
+        
+    }
+    h5 {
+        font-size: 20px;
+        font-family: BeVietnamPro-sb;
+    }
+    
+    .chungnhan{
+        overflow: hidden;
+        display: block;
+        border: 3px solid #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+}
+
+#Project {
+    margin-top: 100px;
 }
 
 @include respond(md) {

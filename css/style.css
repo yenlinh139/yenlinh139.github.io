@@ -120,6 +120,20 @@ ul li {
       transition: all 0.3s ease-in-out; }
       #home .img-avt img:hover {
         transform: scale(1.1); }
+  #home button {
+    position: absolute;
+    top: 330px;
+    left: 7%;
+    background-color: #dc3545;
+    border: none;
+    padding: 10px 20px; }
+    #home button:hover {
+      background-color: #90242f;
+      border: none; }
+  #home a {
+    color: #fff;
+    font-size: 16px;
+    font-family: BeVietnamPro-md; }
 
 #About {
   margin-top: 100px; }
@@ -252,6 +266,12 @@ ul li {
   #Education h5 {
     font-size: 20px;
     font-family: BeVietnamPro-sb; }
+  #Education .title-CN {
+    font-size: 20px;
+    padding: 150px 0 10px;
+    text-align: center;
+    font-family: BeVietnamPro-sb;
+    line-height: 1.7; }
   #Education .chungnhan {
     overflow: hidden;
     display: block;
@@ -261,12 +281,68 @@ ul li {
 
 #Project {
   margin-top: 100px; }
+  #Project h3 {
+    font-family: BeVietnamPro-sb;
+    font-size: 26px; }
+  #Project .underline {
+    color: #dc3545;
+    font-size: 16px;
+    font-family: BeVietnamPro-sb;
+    border: none;
+    border-bottom: 1px #dc3545 solid;
+    padding: 0 2px 2px;
+    text-decoration: none;
+    background: none;
+    outline: none; }
+    #Project .underline:hover {
+      color: #555555;
+      font-family: BeVietnamPro-sb;
+      border-bottom: 1px #555555 solid; }
 
+@media (max-width: 1199px) {
+  #home {
+    height: 350px; }
+    #home h4 {
+      font-size: 36px;
+      font-family: BeVietnamPro-b;
+      position: absolute;
+      top: 40px;
+      left: 5%; }
+    #home p {
+      position: absolute;
+      top: 150px;
+      left: 5%;
+      width: 45%; }
+    #home .img-avt {
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      top: 18px;
+      width: 40%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+      #home .img-avt img {
+        width: 100%;
+        display: block;
+        transition: all 0.3s ease-in-out; }
+        #home .img-avt img:hover {
+          transform: scale(1.1); }
+    #home button {
+      position: absolute;
+      top: 270px;
+      left: 5%;
+      background-color: #dc3545;
+      border: none;
+      padding: 10px 20px; } }
 @media (max-width: 991px) {
+  #Education .title-CN {
+    padding-top: 0;
+    font-family: BeVietnamPro-md; }
+
   #home {
     height: 250px; }
     #home h4 {
-      font-size: 40px;
+      font-size: 32px;
       font-family: BeVietnamPro-b;
       position: absolute;
       top: 40px;
@@ -290,10 +366,28 @@ ul li {
         display: block;
         transition: all 0.3s ease-in-out; }
         #home .img-avt img:hover {
-          transform: scale(1.1); } }
+          transform: scale(1.1); }
+    #home button {
+      position: absolute;
+      top: 250px;
+      left: 5%; }
+
+  #Project h3 {
+    font-size: 20px; } }
 @media (max-width: 767px) {
+  #Education .chungnhan {
+    margin: 0 10px; }
+  #Education .title-CN {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 0px; }
+  #Education .CNLeft {
+    text-align: start; }
+  #Education .CNRight {
+    text-align: end; }
+
   #home {
-    margin: 40px;
+    margin-top: 80px;
     height: 250px; }
     #home h4 {
       font-size: 36px;
@@ -303,8 +397,8 @@ ul li {
       left: 40%; }
     #home p {
       position: absolute;
-      top: 80%;
-      left: 0;
+      top: 200px;
+      left: 5%;
       width: 90%;
       font-size: 16px; }
     #home .img-avt {
@@ -321,6 +415,11 @@ ul li {
         transition: all 0.3s ease-in-out; }
         #home .img-avt img:hover {
           transform: scale(1.1); }
+    #home button {
+      position: absolute;
+      top: 270px;
+      left: 40%;
+      padding: 7px 15px; }
 
   .ft-left p {
     margin-bottom: 8px; }
@@ -336,4 +435,93 @@ ul li {
       display: block;
       text-align: center;
       line-height: 30px;
-      margin-right: 10px; } }
+      margin-right: 10px; }
+
+  #Project h3 {
+    font-size: 16px; }
+  #Project p {
+    font-size: 13px; }
+  #Project .underline {
+    font-size: 13px; }
+
+  #About {
+    margin-top: 80px; }
+    #About .img-avt {
+      overflow: hidden;
+      display: block;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      border: 8px solid #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin: 0 auto; }
+      #About .img-avt img {
+        width: 100%; }
+    #About .introduceMyrself {
+      margin-top: 30px;
+      text-align: center; }
+      #About .introduceMyrself h1 {
+        font-size: 36px;
+        font-family: BeVietnamPro-sb; }
+      #About .introduceMyrself p {
+        font-size: 16px;
+        padding: 8px 15px;
+        margin: 0;
+        color: #555555; }
+      #About .introduceMyrself button {
+        background-color: #dc3545;
+        border: none;
+        padding: 10px 20px; }
+        #About .introduceMyrself button:hover {
+          background-color: #90242f;
+          border: none; }
+      #About .introduceMyrself a {
+        color: #fff;
+        font-size: 16px;
+        font-family: BeVietnamPro-md; }
+    #About .info {
+      margin-top: 50px; }
+      #About .info .Download {
+        font-size: 13px;
+        padding: 8px 15px;
+        width: 180px;
+        border-radius: 22px;
+        margin-left: 10px; }
+      #About .info .list-brands li a {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        line-height: 30px;
+        margin-right: 8px;
+        font-size: 13px; }
+    #About .jumbo-address .address-list {
+      width: 100%;
+      border-collapse: collapse; }
+      #About .jumbo-address .address-list th, #About .jumbo-address .address-list td {
+        border: 1px solid #dedede;
+        padding: 15px 20px;
+        color: #555555; }
+      #About .jumbo-address .address-list th {
+        font-weight: bold;
+        color: #555555;
+        width: 250px; }
+    #About .Skills {
+      margin-top: 30px;
+      text-align: center; }
+      #About .Skills .title {
+        color: #555555;
+        font-size: 32px;
+        font-family: BeVietnamPro-sb; }
+      #About .Skills .Skills-conten i {
+        color: #dc3545;
+        font-size: 36px;
+        padding-top: 20px; }
+      #About .Skills .Skills-conten h6 {
+        color: #555555;
+        font-size: 20px;
+        padding-top: 15px;
+        font-family: BeVietnamPro-md; }
+      #About .Skills .Skills-conten p {
+        color: #555555;
+        font-size: 16px;
+        padding: 5px 45px; } }
